@@ -44,14 +44,14 @@
       </div>
 
       <div v-if="isReady == true && ok == false" class="doc-state">
-        <div class="doc-state__img-wrapper notOk">
+        <div class="doc-state__img-wrapper">
           <img
             src="@/assets/img/upload.svg"
             alt="uploading"
             class="doc-state__img"
           />
         </div>
-        <div class="doc-state__group">
+        <div class="doc-state__group notOk">
           <p class="doc-state__p">Загрузить скан страницы с фотографией</p>
           <p class="doc-state__sub-p">Размер файла не более 5мб</p>
         </div>
@@ -136,7 +136,6 @@ export default {
       &:after {
         content: "Отклонено";
         color: #c43524;
-        right: -83px;
       }
     }
 
